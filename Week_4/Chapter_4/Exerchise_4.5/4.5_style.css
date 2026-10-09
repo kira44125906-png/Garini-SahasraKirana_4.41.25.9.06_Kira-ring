@@ -1,0 +1,56 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex; /* Use Flexbox for card arrangement */
+    flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Spacing between cards */
+}
+
+.financial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 280px; /* Card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.financial-card:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.financial-card h2 {
+    color: #34495e;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.financial-card .value {
+    color: #28a745; /* Green for positive values */
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Example if there are negative values */
+.financial-card.negative .value {
+    color: #dc3545; /* Red for negative values */
+}

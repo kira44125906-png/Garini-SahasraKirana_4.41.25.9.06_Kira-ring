@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector & Priority Exercise</title>
+    <style>
+        /* Internal CSS */
+        p {
+            color: green; /* Rule 1 */
+            font-size: 16px;
+        }
+        .important-text {
+            color: purple; /* Rule 2 */
+        }
+        #specific-text {
+            color: blue; /* Rule 3 */
+        }
+        div p {
+            font-weight: bold; /* Rule 4 (Descendant) */
+        }
+        div > p {
+            text-decoration: underline; /* Rule 5 (Child) */
+        }
+    </style>
+    <link rel="stylesheet" href="external_styles.css"> <!-- Link to external_styles.css -->
+</head>
+<body>
+    <h1 style="color: red;">CSS Priority Exercise</h1> <!-- Inline Style -->
+
+    <p class="normal-text">This is a normal paragraph.</p>
+    <p class="important-text">This is a paragraph with an important class.</p>
+    <p id="specific-text">This is a paragraph with a specific ID.</p>
+
+    <div>
+        <p>Paragraph inside a div (direct child).</p>
+        <span><p>Paragraph inside a span inside a div (descendant, not direct child).</p></span>
+    </div>
+
+    <p class="important-text" style="color: orange;">This paragraph has a class and inline style.</p>
+</body>
+</html>

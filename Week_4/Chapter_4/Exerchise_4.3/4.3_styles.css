@@ -1,0 +1,99 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #eef2f7; /* General background color */
+    margin: 0;
+    padding: 20px;
+    background-image: url("https://placehold.co/1920x1080/E0F7FA/000?text=Accounting+Background");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh; /* Ensure background covers entire viewport height */
+    display: flex; /* For centering the form */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent to see background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum form width */
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-weight: bold;
+    color: #34495e;
+    padding: 0 10px;
+    background-color: #ffffff; /* Matches fieldset background */
+    border-radius: 3px;
+}
+
+label {
+    display: block; /* Make label appear on new line */
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="month"],
+select,
+textarea {
+    width: calc(100% - 20px); /* Subtract padding from 100% */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
+    font-size: 1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff; /* Blue for submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+}
+
+input[type="reset"]:hover {
+    background-color: #5a6268;
+}

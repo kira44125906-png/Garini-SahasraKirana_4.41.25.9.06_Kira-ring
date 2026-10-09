@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4e4e4;
+    color: #29251d	;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+header {
+    background-color: #4c6394;
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 64px;
+    color:	#e4e4e4;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 20px;
+    color:#04096d;
+}
+
+footer {
+    background-color: #7ea4b0;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2,
+section h3 {
+    color: #7ea4b0;
+    margin-bottom: 15px;
+}
+
+section ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* TABLE STYLING */
+#general-journal, #cash-movement {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* TABLE CELLS - DESCENDANT SELECTOR */
+#general-journal th,
+#general-journal td,
+#cash-movement th,
+#cash-movement td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* AMOUNT (IDR) COLUMN */
+#general-journal .amount,
+#cash-movement .amount {
+    text-align: right;
+}
+
+/* TABLE HEADER */
+#general-journal thead,
+#cash-movement thead {
+    background-color: #04096d;
+    color: #ffffff;
+}
+
+/* ALTERNATING ROW COLORS */
+#general-journal tbody tr:nth-child(even),
+#cash-movement tbody tr:nth-child(even) {
+    background-color:#0e148d;
+    color: 	#d4d4d4;
+}
+
+/* TABLE TOTAL ROW */
+#general-journal tfoot,
+#cash-movement tfoot {
+    background-color: #aeafce;
+    color:#04096d;
+    font-weight: bold;
+}
+/* ADDITIONAL STYLING FOR General Journal */
+
+/* SUMMARY OF CHANGES IN EQUITY */
+section ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ASSIGNMENT 4.1 - STATEMENT OF FINANCIAL POSITION */
+
+#balance-sheet thead th {
+    text-align: center;
+}
+
+#balance-sheet {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#balance-sheet th,
+#balance-sheet td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#balance-sheet .amount {
+    text-align: right;
+}
+
+#balance-sheet .amount {
+    text-align: right;
+}
+
+#balance-sheet thead {
+    background-color: #04096d;
+    color: #ffffff;
+}
+
+#balance-sheet tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#balance-sheet tfoot {
+    background-color: #aeafce;
+    color: #04096d;
+    font-weight: bold;
+}
+
+/* Summary of Changes in Equity */
+section ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    list-style-type: upper-roman;
+}
+
+section h2,
+section h3 {
+    color: #7ea4b0;
+    margin-bottom: 15px;
+}
+
+/* OPTIONAL NUMBERING STYLE */
+section ol {
+    list-style-type: upper-roman;
+}
+
+/* SECTION HEADINGS */
+section h2,
+section h3 {
+    color: #7ea4b0;
+    margin-bottom: 15px;
+}

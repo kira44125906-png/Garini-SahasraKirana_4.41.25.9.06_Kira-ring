@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General-journal</title>
+    <link rel="stylesheet" href="4.2_styles.css">
+</head>
+<body>
+    <h1>Chart of Accounts - Maju Jaya Company </h1>
+    
+    <h2> By Accounts Code </h2>
+    
+    <ol>
+
+        <li>
+            1000 - Assets
+            <ul>
+                <li>
+                      1100 - Current Assets
+                      <ol>
+                        <li>1110 - Cash</li>
+                        <li>1120 - Bank</li>
+                        <li>1130 - Accounts Receivable</li>
+                        <li>1140 - Inventory</li>
+                      </ol>
+                </li>
+
+                <li>
+                    1200 - Fixed Assets
+                    <ol>
+                        <li>1210 - Land</li>
+                        <li>1220 - Building</li>
+                        <li>1230 - Office Equipment</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            2000 - Liabilities
+            <ul>
+                <li>
+                    21000 - Current Liabilities
+                    <ol>
+                        <li>2110 - Accounts Payable</li>
+                        <li>2120 - Salaries Payable</li>
+                    </ol>
+                </li>
+                <li>
+                    2200 - Long - Term Liabilities
+                    <ol>
+                        <li>2210 - Bank Loans</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            3000 - Equity
+            <ul>
+                <li>3100 - Share Capital</li>
+                <li>3110 - Retained Earnings</li>
+            </ul>
+        </li>
+        <li>
+            5000 - Exspense
+            <ul>
+                <li>5100 - Salaries Exspense</li>
+                <li>5200 - Rent Exspense</li>
+            </ul>
+        </li>
+    </ol>
+             
+<h1> General Journal </h1>
+
+<table id="general-journal-table">
+    <caption>Transaction for March 2025</caption>
+    <thead>
+        <tr>
+            <th colspan="3">Transaction Details</th>
+            <th>Account</th>
+            <th>Debit (IDR) </th>
+            <th>Credit (IDR) </th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <th>Ref. No. </th>
+            <th>Description</th>
+            <th></th> <!--Empty Account coloum for hearder alignment-->
+            <th></th> <!--Empty Debit Coloumn for hearder alignment-->
+            <th></th> <!--Empty Credit coloumn for hearder aligment-->
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2025-03-01</td>
+            <td>TRX001</td>
+            <td>Cash Receipt from Service Revenue</td>
+            <td>Cash</td>
+            <td>10,000,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td> <!-- Merging Date row -->
+            <td>    Service Revenue</td>
+            <td></td>
+            <td>10,000,000</td>
+        </tr>
+         <tr> 
+            <td rowspan="2">2025-03-05</td> <!-- Merging Date row --> 
+            <td rowspan="2">TRX002</td> <!-- Merging Ref. No. row --> 
+            <td rowspan="2">Cash Purchase of Office Equipment</td> <!-- Merging Description row --> 
+            <td>Office Equipment</td> 
+            <td>2,500,000</td> 
+            <td></td> 
+        </tr>
+         <tr> 
+            <td>    Cash</td> 
+            <td></td> 
+            <td>2,500,000</td> 
+        </tr> 
+        <!-- Add 2-3 more transactions with rowspan/colspan if relevant --> 
+        <tr> 
+            <td>2025-03-10</td> 
+            <td>TRX003</td> 
+            <td>Payment of Employee Salaries</td> 
+            <td>Salaries Expense</td> 
+            <td>1,500,000</td> 
+            <td></td> 
+        </tr>
+          <tr> 
+            <td colspan="3"></td> 
+            <td>    Cash</td> 
+            <td></td> 
+            <td>1,500,000</td> 
+        </tr> 
+    </tbody> 
+    <tfoot> 
+         <tr class="highlight-row"> 
+            <td colspan="4"><strong>TOTAL</strong></td> 
+            <td><strong>14,000,000</strong></td> <!-- Adjust to your Debit total --> 
+            <td><strong>14,000,000</strong></td> <!-- Adjust to your Credit total --> 
+        </tr> 
+    </tfoot> 
+</table> 
+    
+<h2>Cash Movement Report (Summary)</h2> 
+<table> 
+    <thead> 
+        <tr> 
+            <th>Date</th> 
+            <th>Description</th> 
+            <th>Receipts (IDR)</th> 
+            <th>Disbursements (IDR)</th> 
+            <th>Balance (IDR)</th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr> 
+            <td>2025-03-01</td> 
+            <td>Beginning Balance</td> 
+            <td></td> 
+            <td></td> 
+            <td>5,000,000</td> 
+        </tr> 
+        <tr> 
+            <td>2025-03-01</td> 
+            <td>Receipt of Accounts Receivable</td> 
+            <td>5,000,000</td> 
+            <td></td> 
+            <td>10,000,000</td> <!-- 5M + 5M --> 
+        </tr> 
+        <tr> 
+            <td>2025-03-05</td> 
+            <td>Equipment Purchase</td> 
+            <td></td> 
+            <td>2,500,000</td> 
+            <td>7,500,000</td> <!-- 10M - 2.5M --> 
+        </tr> 
+        <tr> 
+            <td>2025-03-10</td> 
+            <td>Salary Payment</td> 
+            <td></td> 
+            <td>1,500,000</td> 
+            <td>6,000,000</td> <!-- 7.5M - 1.5M --> 
+        </tr> 
+    </tbody> 
+    <tfoot> 
+        <tr>
+            <td colspan="4"><strong>Ending Balance</strong></td> 
+<td><strong>6,000,000</strong></td> 
+</tr> 
+</tfoot> 
+</table> 
+          
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+
+/* Styling for General Journal Table */
+#general-journal-table { /* ID Selector */
+    width: 90%; /* Use percentage for responsiveness */
+    border-collapse: collapse; /* Collapse cell borders */
+    margin: 25px auto; /* Center and add spacing */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+#general-journal-table th, #general-journal-table td { /* Descendant Selector */
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#general-journal-table thead {
+    background-color: #4CAF50; /* Green color for table header */
+    color: white;
+}
+
+#general-journal-table tfoot {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Styling for Cash Movement Table */
+table { /* Element Selector */
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #007bff; /* Blue color for other table header */
+    color: white;
+}
+
+.highlight-row { /* Class Selector */
+    background-color: #ffffcc; /* Light yellow color */
+    font-weight: bold;
+}
+

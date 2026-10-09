@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Data and Salary Payment Input Form</h1> 
+    <form method="post" action="#"> 
+        <fieldset> 
+            <legend>Employee Information</legend> 
+                <p> 
+                    <label for="employeeName">Full Name:</label><br> 
+                    <input type="text" id="employeeName" name="employeeName" required placeholder="Employee's full name"> </p> 
+                <p> 
+                    <label for="employeeID">Employee ID:</label><br> 
+                    <input type="text" id="employeeID" name="employeeID" required placeholder="Employee ID/NIK"> 
+                </p> 
+                <p>                 
+                    <label for="dob">Date of Birth:</label><br>                 
+                    <input type="date" id="dob" name="dob" required>             
+                </p>            
+                <p>
+                    Gender:<br>
+                    <input type="radio" id="male" name="gender" value="Male" required>                 
+                    <label for="male">Male</label>                 
+                    <input type="radio" id="female" name="gender" value="Female">                 
+                    <label for="female">Female</label>             
+                </p>             
+                <p> 
+                    <label for="employeePhone">Phone Number:</label><br>                 
+                    <input type="text" id="employeePhone" name="employeePhone" placeholder="Example: 08123456789">             
+                </p>             
+                <p>                 
+                    <label for="position">Position:</label><br>                 
+                    <input type="text" id="position" name="position" placeholder="Accounting Manager / Tax Staff">             
+                </p>
+                    </fieldset>          
+                         
+                <fieldset>             
+                    <legend>Salary Payment Details</legend>             
+                        <p>                 
+                            <label for="salaryPeriod">Salary Period:</label><br>                 
+                            <input type="month" id="salaryPeriod" name="salaryPeriod" required>             
+                        </p>             
+                        <p>                 
+                            <label for="basicSalary">Basic Salary (IDR):</label><br>                 
+                            <input type="number" id="basicSalary" name="basicSalary" min="0" step="1000" required placeholder="Example: 5000000">             
+                        </p>             
+                        <p>                 
+                            <label for="transportAllowance">Transportation Allowance (IDR):</label><br>                
+                            <input type="number" id="transportAllowance" name="transportAllowance" min="0" step="500" value="0">             
+                        </p>             
+                        <p>                 
+                            <label for="bpjsDeduction">BPJS Deduction (IDR):</label><br>                 
+                            <input type="number" id="bpjsDeduction" name="bpjsDeduction" min="0" step="100" value="0">             
+                        </p>         
+                </fieldset>          
+                    <p>             
+                        <input type="submit" value="Submit Salary Data">             
+                        <input type="reset" value="Reset Form">         
+                    </p>  
+            </legend>
+        </fieldset>   
+    </form> 
+
+    <h1>Employee Leave Request Form</h1> 
+    <form method="post" action="#"> 
+        <fieldset> 
+            <legend>Employee Information</legend> 
+            <p> 
+                <label for="leaveName">Full Name:</label><br> 
+                <input type="text" id="leaveName" name="leaveName" required placeholder="Employee name"> 
+            </p> 
+            <p> 
+                <label for="leaveID">Employee ID:</label><br> 
+                <input type="text" id="leaveID" name="leaveID" required placeholder="Employee ID/NIK"> 
+            </p>
+               </fieldset> 
+ 
+        <fieldset> 
+            <legend>Leave Request Details</legend> 
+            <p> 
+                <label for="leaveType">Type of Leave:</label><br> 
+                <select id="leaveType" name="leaveType" required> 
+                    <option value="">-- Select Leave Type --</option> 
+                    <option value="Annual">Annual Leave</option> 
+                    <option value="Sick">Sick Leave</option> 
+                    <option value="Maternity">Maternity Leave</option> 
+                    <option value="OtherImportant">Other Important Leave</option> 
+                </select> 
+            </p> 
+            <p> 
+                <label for="leaveStartDate">Leave Start Date:</label><br> 
+                <input type="date" id="leaveStartDate" name="leaveStartDate" required> 
+            </p> 
+            <p> 
+                <label for="leaveEndDate">Leave End Date:</label><br> 
+                <input type="date" id="leaveEndDate" name="leaveEndDate" required> 
+            </p> 
+            <p> 
+                <label for="leaveReason">Reason for Leave:</label><br> 
+                <textarea id="leaveReason" name="leaveReason" rows="5" cols="40" placeholder="Please explain your reason for leave..." required></textarea> 
+            </p> 
+            <p> 
+                Supporting Documents (can select more than one):<br> 
+                <input type="checkbox" id="doctorCert" name="documents[]" value="Doctor's Certificate"> 
+                <label for="doctorCert">Doctor's Certificate</label><br> 
+                <input type="checkbox" id="familyStatement" name="documents[]" value="Family Statement"> 
+                <label for="familyStatement">Family Statement</label><br> 
+                <input type="checkbox" id="otherDoc" name="documents[]" value="Other"> 
+                <label for="otherDoc">Other</label> 
+            </p> 
+        </fieldset> 
+ 
+        <p> 
+            <input type="submit" value="Submit Leave Request"> 
+            <input type="reset" value="Reset Form"> 
+        </p> 
+    </form> 
+    <h1>Internal Quality Audit Form</h1> 
+    <form method="post" action="#" enctype="multipart/form-data"> 
+    <fieldset> 
+        <legend>General Audit Information</legend> 
+    <p> 
+        <label for="auditorName">Auditor Name:</label><br> 
+        <input type="text" id="auditorName" name="auditorName" required placeholder="Full Name of Auditor"> 
+    </p> 
+    <p> 
+    <label for="auditDate">Audit Date:</label><br>
+                        
+ <input type="date" id="auditDate" name="auditDate"required> 
+            </p> 
+            <p> 
+                <label for="department">Department Audited:</label><br> 
+                <select id="department" name="department" required> 
+                    <option value="">-- Select Department --</option>  
+                    <option value="Finance">Finance</option> 
+                    <option value="Production">Production</option> 
+                    <option value="Marketing">Marketing</option> 
+                    <option value="HRD">Human Resources</option> 
+                </select> 
+            </p> 
+            <p>
+                 Audit Type:<br> 
+                <input type="radio" id="internal" name="auditType" value="Internal" required> 
+                <label for="internal">Internal</label> 
+                <input type="radio" id="external" name="auditType" value="External"> 
+                <label for="external">External</label> 
+            </p> 
+        </fieldset> 
+ 
+        <fieldset> 
+            <legend>Audit Assessment Areas</legend> 
+            <fieldset> 
+                <legend>Documentation Compliance</legend> 
+                <p> 
+                    Documents complete and up-to-date?<br> 
+                    <input type="radio" id="docYes" name="docCompliance" value="Yes" required> 
+                    <label for="docYes">Yes</label> 
+                    <input type="radio" id="docNo" name="docCompliance" value="No"> 
+                    <label for="docNo">No</label> 
+                </p> 
+                <p> 
+                    <label for="docNotes">Additional Notes:</label><br> 
+                    <textarea id="docNotes" name="docNotes" rows="3" cols="50" placeholder="Describe your observations..."></textarea> 
+                </p> 
+            </fieldset> 
+ 
+            <fieldset> 
+                <legend>Procedure Compliance</legend> 
+                <p> 
+                    Procedures followed correctly?<br> 
+                    <input type="radio" id="procYes" name="procCompliance" value="Yes" required> 
+                    <label for="procYes">Yes</label> 
+                    <input type="radio" id="procNo" name="procCompliance" value="No"> 
+                    <label for="procNo">No</label> 
+                </p> 
+                  <p> 
+                    <label for="complianceValue">Compliance Score (15):</label><br> 
+                    <input type="number" id="complianceValue" name="complianceValue" min="1" max="5" required> 
+                </p> 
+            </fieldset> 
+ 
+            <fieldset> 
+                <legend>Identification of Non-conformities</legend> 
+                <p> 
+                    Non-conformities found?<br> 
+                    <input type="checkbox" id="minorNon" name="nonConformity[]" value="Minor"> 
+                    <label for="minorNon">Minor</label><br> 
+                    <input type="checkbox" id="majorNon" name="nonConformity[]" value="Major"> 
+                    <label for="majorNon">Major</label><br> 
+                    <input type="checkbox" id="criticalNon" name="nonConformity[]" value="Critical"> 
+                    <label for="criticalNon">Critical</label> 
+                </p> 
+                <p>
+                    <label for="nonComplianceDesc">Description of Nonconformity:</label><br> 
+                    <textarea id="nonComplianceDesc" name="nonComplianceDesc" rows="4" cols="50" placeholder="Detail the non-conformity found..."></textarea> 
+                </p> 
+            </fieldset> 
+        </fieldset> 
+ 
+        <p> 
+            <label for="supportingEvidence">Upload Supporting Evidence:</label><br> 
+            <input type="file" id="supportingEvidence" name="supportingEvidence" accept=".pdf,.doc,.docx,.jpg,.png"> 
+            <small> (Format: PDF, Word, JPG, PNG)</small> 
+        </p> 
+ 
+        <p> 
+            <input type="submit" value="Submit Audit Report"> 
+            <input type="reset" value="Reset Form"> 
+        </p> 
+    </form> 
+</body>
+</html>

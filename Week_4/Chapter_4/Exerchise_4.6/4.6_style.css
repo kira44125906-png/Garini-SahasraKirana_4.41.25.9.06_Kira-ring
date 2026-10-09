@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 8px 15px;
+    display: block; /* So padding applies to the entire link area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+nav ul li a:hover { /* Pseudo-class for hover effect */
+    background-color: #555;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Company Fixed Asset Recording Form</h1>  
+    <form method="post" action="#" enctype="multipart/form-data">
+        
+        <h1>Asset Identification</h1>
+
+            <fieldset>
+                <legend>Asset Information</legend>
+                <p>
+                    <label for="Assetname">Asset Name:</label>
+                    <input type="text" placeholder="Automated Production Machine" id="Assetname" name="Assetname" required>
+                </p>
+                <p>
+                    <label for="Assetcode">Asset Code:</label>
+                    <input type="text" placeholder="XH-106157" id="Assetcode" name="Assetcode" required>
+                </p>
+                <p>
+                    <label for="AssetSerialNumber">Asset Serial Number:</label>
+                    <input type="text" placeholder="Enter asset serial number" id="AssetSerialNumber" name="AssetSerialNumber">
+                </p>
+                <p>
+                    <label for="AssetCategory">Asset Category:</label><br> 
+                    <select id="AssetCategory" name="AssetCategory" required> 
+                        <option value="Vehicle">Vehicle</option>  
+                        <option value="Machinery">Machinery</option> 
+                        <option value="Building">Building</option> 
+                        <option value="Office Equipment">Office Equipment</option> 
+                        <option value="Furniture">Furniture</option> 
+                        <option value="Land">Land</option> 
+                        <option value="Software">Software</option> 
+                    </select> 
+                </p>     
+           </fieldset>
+            
+
+        <h1>Acquisition Details</h1>
+            
+            <fieldset>
+                <legend>Acquisition Information</legend>
+                <p>
+                    <label for="ad">Acquisition Date:</label>
+                    <input type="date" id="ad" name="ad" required>
+                </p>
+                <p>
+                    <label for="AcquisitionValue">Acquisition Value / Purchase Price:</label>
+                    <input type="number" min="0" step="1000" placeholder="50000000" id="AcquisitionValue" name="AcquisitionValue" required>
+                </p>
+                <p>
+                    Acquisition Method:<br>
+
+                    <input type="radio" id="CashPurchase" name="AcquisitionMethod" value="CashPurchase" required>
+                    <label for="CashPurchase">Cash Purchase</label><br>
+
+                    <input type="radio" id="CreditPurchase" name="AcquisitionMethod" value="CreditPurchase">
+                    <label for="CreditPurchase">Credit Purchase</label><br>
+
+                    <input type="radio" id="FinanceLease" name="AcquisitionMethod" value="FinanceLease">
+                    <label for="FinanceLease">Finance Lease</label><br>
+
+                    <input type="radio" id="Donation" name="AcquisitionMethod" value="Donation">
+                    <label for="Donation">Donation</label><br>
+                </p>
+                <p>
+                    <label for="Vendor">Vendor/Supplier:</label>
+                    <input type="text" id="Vendor" name="Vendor" required>
+                </p>
+                <p>
+                    <label for="UploadAcquisition">Upload Acquisition Documents:</label>
+                    <input type="file" accept=".pdf,.jpg,.png" id="UploadAcquisition" name="UploadAcquisition" multiple>
+                </p>
+            </fieldset>
+            
+
+        <h1>Depreciation Fixed Asset</h1>
+        
+            <fieldset>
+                <legend>Depreciation Information</legend>
+                <p>
+                    <label for="UsefulLife">Useful Life (in years):</label>
+                    <input type="number" id="UsefulLife" name="UsefulLife" min="1" max="50" placeholder="5">
+                </p>
+        
+                <p>
+                    <label for="SalvageValue">Salvage Value:</label>
+                    <input type="number" id="SalvageValue" name="SalvageValue" min="0" step="1000" placeholder="5000000">
+                </p>
+                <p>
+                    <label for="DepreciationMethod">Depreciation method:</label>
+                    <select id="DepreciationMethod" name="DepreciationMethod" required>
+                        <option value="Straight Line">Straight Line</option>
+                        <option value="Declining Balance">Declining Balance</option>
+                    </select>
+                </p>
+            </fieldset>
+            
+
+        <h1>Responsible Person And Location</h1>
+            
+            <fieldset>
+                <legend>Responsible Person Information</legend>
+                <p>
+                    <label for="ResponsiblePerson">Responsible Person's name:</label>
+                    <input type="text" id="ResponsiblePerson" name="ResponsiblePerson" required>
+                </p>
+                <p>
+                    <label for="UserDepartment">User Department:</label>
+                    <input type="text" id="UserDepartment" name="UserDepartment" placeholder="Production / Accounting" required>
+                </p>
+                <p>
+                    <label for="AssetPhysicalLocation">Asset Physical Location:</label>
+                    <input type="text" placeholder="3rd Floor Main Building" id="AssetPhysicalLocation" name="AssetPhysicalLocation" required>
+                </p>
+                <p>
+                    <label for="ResponsibleEmail">Responsible Person Email:</label>
+                    <input type="email" id="ResponsibleEmail" name="ResponsibleEmail" required>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+    </form>
+</body>
+</html>
