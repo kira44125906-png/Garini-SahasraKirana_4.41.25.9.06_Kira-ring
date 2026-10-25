@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5.4_styles.css">
+</head>
+<body>
+     <header> 
+        <nav> 
+            <ul> 
+                <li><a href="#">Dashboard</a></li> 
+                <li><a href="#">Reports</a></li> 
+                <li><a href="#">Data Input</a></li> 
+                <li><a href="#">Settings</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+  
+    <div class="dashboard-container"> 
+        <aside class="sidebar"> 
+            <h2>Quick Menu</h2> 
+            <ul> 
+                <li><a href="#">New Transaction</a></li> 
+                <li><a href="#">Balance Sheet</a></li> 
+                <li><a href="#">Income Statement</a></li> 
+                <li><a href="#">Manage Assets</a></li> 
+            </ul> 
+        </aside> 
+  
+        <main class="main-content"> 
+            <h1>Financial Summary</h1> 
+            <div class="summary-cards-container"> 
+                <div class="financial-card"> 
+                    <h2>Revenue</h2> 
+                    <p class="value">IDR 25,000,000</p> 
+                </div> 
+                <div class="financial-card"> 
+                    <h2>Expenses</h2> 
+                    <p class="value negative">IDR 12,000,000</p> 
+                </div> 
+                <div class="financial-card"> 
+                    <h2>Net Profit</h2> 
+                    <p class="value">IDR 13,000,000</p> 
+                </div> 
+            </div> 
+  
+            <h2>Employee &amp; Salary Data Input</h2> 
+            <form method="post" action="#"> 
+                <!-- complete form: see the next code block --> 
+            </form> 
+        </main> 
+    </div> 
+
+    <footer> 
+        <p>&copy; 2025 Simple Accounting Dashboard</p> 
+    </footer>
+
+<form method="post" action="#"> 
+    <fieldset> 
+        <legend>Employee Information</legend> 
+        <p> 
+            <label for="employeeName">Full Name:</label> 
+            <input type="text" id="employeeName" name="employeeName" 
+                   required placeholder="Employee's full name"> 
+        </p> 
+        <p> 
+            <label for="employeeID">Employee ID:</label> 
+            <input type="text" id="employeeID" name="employeeID" 
+                   required placeholder="Employee ID/NIK"> 
+        </p> 
+        <p> 
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob" required> 
+        </p> 
+        <fieldset class="radio-group"> 
+            <legend>Gender:</legend> 
+            <input type="radio" id="male" name="gender" value="Male" required> 
+            <label for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="Female"> 
+            <label for="female">Female</label> 
+        </fieldset> 
+        <p> 
+            <label for="employeeEmail">Email Address:</label> 
+            <input type="email" id="employeeEmail" name="employeeEmail" 
+                   placeholder="email@company.com"> 
+        </p> 
+        <p> 
+            <label for="employeePhone">Phone Number:</label> 
+            <input type="text" id="employeePhone" name="employeePhone" 
+                   placeholder="Example: 08123456789"> 
+        </p> 
+        <p> 
+            <label for="position">Position:</label> 
+            <input type="text" id="position" name="position" 
+                   placeholder="Accounting Manager / Tax Staff"> 
+        </p> 
+    </fieldset> 
+  
+    <fieldset> 
+        <legend>Salary Payment Details</legend> 
+        <p> 
+            <label for="salaryPeriod">Salary Period:</label> 
+            <input type="month" id="salaryPeriod" name="salaryPeriod" required> 
+        </p> 
+        <p> 
+            <label for="basicSalary">Basic Salary (IDR):</label> 
+            <input type="number" id="basicSalary" name="basicSalary" 
+                   min="0" step="1000" required placeholder="Example: 5000000"> 
+        </p> 
+        <p> 
+            <label for="transportAllowance">Transportation Allowance (IDR):</label> 
+            <input type="number" id="transportAllowance" name="transportAllowance" 
+                   min="0" step="500" value="0"> 
+        </p> 
+        <p> 
+            <label for="bpjsDeduction">BPJS Deduction (IDR):</label> 
+            <input type="number" id="bpjsDeduction" name="bpjsDeduction" 
+                   min="0" step="100" value="0">  
+        </p> 
+    </fieldset> 
+  
+    <p> 
+        <input type="submit" value="Submit Salary Data"> 
+        <input type="reset" value="Reset Form"> 
+    </p> 
+</form>
+
+</body>
+</html>

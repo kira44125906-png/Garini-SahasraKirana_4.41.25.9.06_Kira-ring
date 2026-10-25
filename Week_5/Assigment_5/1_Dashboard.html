@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Performance Dashboard</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+</head>
+<body>
+    <header>
+        <h1>Stary blue</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#chart-of-accounts">Chart of Accounts</a></li>
+            <li><a href="#Balancesheet">Statement of Financial Position</a></li>
+            <li><a href="#general-journal">General Journal</a></li>
+            <li><a href="#cash-movement">Cash Movement Report</a></li>
+            <li><a href="#expense-form">Expense Form</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#chart-of-accounts">Chart of Accounts</a></li>
+            <li><a href="#Balancesheet">Statement of Financial Position</a></li>
+            <li><a href="#general-journal">General Journal</a></li>
+            <li><a href="#cash-movement">Cash Movement Report</a></li>
+            <li><a href="#expense-form">Expense Form</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section>
+            <h2>Financial Performance Dashboard</h2>
+            <p>Welcome to the Financial Performance Dashboard. This dashboard provides an overview of the company's financial position, including the chart of accounts, statement of financial position, general journal, and cash movement report.</p>
+        </section>
+        <!-- chart of accounts -->
+        <!-- Statement of Financial Position -->
+        <!-- General Journal -->
+        <!-- Cash Movement Report -->
+
+        <table id="performance-table">
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Amount (IDR)</th>
+                    <th>Expenses (IDR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>service revenue</td>
+                    <td>10,000,000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Salaries Expense</td>
+                    <td></td>
+                    <td>1,500,000</td>
+                </tr>
+                <tr>
+                    <td>Rent Expense</td>
+                    <td></td>
+                    <td>500,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Net profit </th>
+                    <th>8,000,000</th>
+                </tr>
+        </table>
+
+        <table id="summary-table">
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Amount (IDR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cash</td>
+                    <td>10,000,000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Accounts Receivable</td>
+                    <td>5,000,000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Inventory</td>
+                    <td>15,000,000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Office Equipment</td>
+                    <td>20,000,000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Buildings</td>
+                    <td>50,000,000</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>100,000,000</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        
+        <section class="summary-cards">
+             <div class="summary-card">
+                <h3>Total Revenue</h3>
+                <p>Rp10,000,000</p>
+            </div>
+
+        <div class="summary-card">
+            <h3>Total Expenses</h3>
+            <p>Rp2,000,000</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>Net Profit</h3>
+            <p>Rp8,000,000</p>
+        </div>
+        </section>
+
+    <h2>Chart of Accounts</h2>
+    <h2> By Accounts Code </h2>
+    
+    <ol id="chart-of-accounts">
+
+        <li>
+            1000 - Assets
+            <ul>
+                <li>
+                      1100 - Current Assets
+                      <ol>
+                        <li>1110 - Cash</li>
+                        <li>1120 - Bank</li>
+                        <li>1130 - Accounts Receivable</li>
+                        <li>1140 - Inventory</li>
+                      </ol>
+                </li>
+
+                <li>
+                    1200 - Fixed Assets
+                    <ol>
+                        <li>1210 - Land</li>
+                        <li>1220 - Building</li>
+                        <li>1230 - Office Equipment</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            2000 - Liabilities
+            <ul>
+                <li>
+                    21000 - Current Liabilities
+                    <ol>
+                        <li>2110 - Accounts Payable</li>
+                        <li>2120 - Salaries Payable</li>
+                    </ol>
+                </li>
+                <li>
+                    2200 - Long - Term Liabilities
+                    <ol>
+                        <li>2210 - Bank Loans</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            3000 - Equity
+            <ul>
+                <li>3100 - Share Capital</li>
+                <li>3110 - Retained Earnings</li>
+            </ul>
+        </li>
+        <li>
+            5000 - Exspense
+            <ul>
+                <li>5100 - Salaries Exspense</li>
+                <li>5200 - Rent Exspense</li>
+            </ul>
+        </li>
+    </ol>
+
+<h2 id="Balancesheet">Statement of Financial Position</h2>
+<table id="balance-sheet">
+    <Caption> For december 2025 </Caption>
+    <thead>
+        <tr>
+            <th>Account</th>
+            <th>Amount (IDR) </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th colspan="2" id="assets">Assets</th> 
+            <tr>
+                <td>Cash</td>
+                <td>10.000.000</td>
+            </tr>
+            <tr>
+                <td>Account Receivable</td>
+                <td>5.000.000</td>
+            </tr>
+            <tr>
+                <td>Inventory</td>
+                <td>15.000.000</td>
+            </tr>
+            <tr>
+                <td>Office Equipment</td>
+                <td>20.000.000</td>
+            </tr>
+            <tr>
+                <td>Buildings</td>
+                <td>50.000.000</td>
+            </tr>
+        </tr>
+        
+        <tr>
+            <tr>
+                <th colspan="2" id="liabilities-equity">Liabilities And Equity</th>
+            </tr>
+            <th colspan="2" id="liabilities">Liabilities</th> 
+            <tr>
+                <td>Accounts Payable</td>
+                <td>8.000.000</td>
+            </tr>
+            <tr>
+                <td>Salaries Payable</td>
+                <td>2.000.000</td>
+            </tr>
+            <tr>
+                <td>Bank Loans</td>
+                <td>40.000.000</td>
+            </tr>
+        </tr>
+
+        <tr>
+            <th colspan="2" id="equity">Equity</th> 
+            <tr>
+                <td>Share Capital</td>
+                <td>35. 0000.000</td>
+            </tr>
+            <tr>
+                <td>Retained Earnings</td>
+                <td>18.000.000</td>
+            </tr>
+            <tr>
+                <td>Owners Drawings</td>
+                <td>- 3.000.000</td>
+        </tr>
+            
+        <tr>
+            <th colspan="2" id="total">Total</th> 
+            <tr>
+                <th>Total Assets</th>
+                <th>100.000.000</th>
+            </tr>
+            <tr>
+                <th>Total Liabilities And Equity</th>
+                <th>100.000.000</th>
+            </tr>
+        </tr>
+
+    </tbody>
+</table>
+
+<p> Adjusment </p>
+<ol>
+    <li>Beginning equity balance: IDR 35.000.000</li>
+    <li>Capital contributions from investors: IDR 15.000.000</li>
+    <li>Net profit for the period: IDR 5.000.000</li>
+    <li>Dividend withdrawals/drawings: IDR 3.000.000</li>
+    <li>Ending equity balance: IDR 50.000.000</li>
+</ol>
+ 
+<h1> General Journal </h1>
+
+<table id="general-journal">
+    <caption>Transaction for March 2025</caption>
+    <thead>
+        <tr>
+            <th colspan="3">Transaction Details</th>
+            <th>Account</th>
+            <th>Debit (IDR) </th>
+            <th>Credit (IDR) </th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <th>Ref. No. </th>
+            <th>Description</th>
+            <th></th> <!--Empty Account coloum for hearder alignment-->
+            <th></th> <!--Empty Debit Coloumn for hearder alignment-->
+            <th></th> <!--Empty Credit coloumn for hearder aligment-->
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2025-03-01</td>
+            <td>TRX001</td>
+            <td>Cash Receipt from Service Revenue</td>
+            <td>Cash</td>
+            <td>10,000,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td> <!-- Merging Date row -->
+            <td>    Service Revenue</td>
+            <td></td>
+            <td>10,000,000</td>
+        </tr>
+         <tr> 
+            <td rowspan="2">2025-03-05</td> <!-- Merging Date row --> 
+            <td rowspan="2">TRX002</td> <!-- Merging Ref. No. row --> 
+            <td rowspan="2">Cash Purchase of Office Equipment</td> <!-- Merging Description row --> 
+            <td>Office Equipment</td> 
+            <td>2,500,000</td> 
+            <td></td> 
+        </tr>
+         <tr> 
+            <td>    Cash</td> 
+            <td></td> 
+            <td>2,500,000</td> 
+        </tr> 
+        <!-- Add 2-3 more transactions with rowspan/colspan if relevant --> 
+        <tr> 
+            <td>2025-03-10</td> 
+            <td>TRX003</td> 
+            <td>Payment of Employee Salaries</td> 
+            <td>Salaries Expense</td> 
+            <td>1,500,000</td> 
+            <td></td> 
+        </tr>
+          <tr> 
+            <td colspan="3"></td> 
+            <td>    Cash</td> 
+            <td></td> 
+            <td>1,500,000</td> 
+        </tr> 
+    </tbody> 
+    <tfoot> 
+         <tr> 
+            <td colspan="4"><strong>TOTAL</strong></td> 
+            <td><strong>14,000,000</strong></td> <!-- Adjust to your Debit total --> 
+            <td><strong>14,000,000</strong></td> <!-- Adjust to your Credit total --> 
+        </tr> 
+    </tfoot> 
+</table> 
+    
+<h2>Cash Movement Report (Summary)</h2> 
+<table id="cash-movement"> 
+    <thead> 
+        <tr> 
+            <th>Date</th> 
+            <th>Description</th> 
+            <th>Receipts (IDR)</th> 
+            <th>Disbursements (IDR)</th> 
+            <th>Balance (IDR)</th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr> 
+            <td>2025-03-01</td> 
+            <td>Beginning Balance</td> 
+            <td></td> 
+            <td></td> 
+            <td>5,000,000</td> 
+        </tr> 
+        <tr> 
+            <td>2025-03-01</td> 
+            <td>Receipt of Accounts Receivable</td> 
+            <td>5,000,000</td> 
+            <td></td> 
+            <td>10,000,000</td> <!-- 5M + 5M --> 
+        </tr> 
+        <tr> 
+            <td>2025-03-05</td> 
+            <td>Equipment Purchase</td> 
+            <td></td> 
+            <td>2,500,000</td> 
+            <td>7,500,000</td> <!-- 10M - 2.5M --> 
+        </tr> 
+        <tr> 
+            <td>2025-03-10</td> 
+            <td>Salary Payment</td> 
+            <td></td> 
+            <td>1,500,000</td> 
+            <td>6,000,000</td> <!-- 7.5M - 1.5M --> 
+        </tr> 
+    </tbody> 
+    <tfoot> 
+        <tr>
+            <td colspan="4"><strong>Ending Balance</strong></td> 
+            <td><strong>6,000,000</strong></td> 
+        </tr> 
+    </tfoot> 
+</table>
+
+    <form>
+        <h1>Expense Form</h1>
+
+            <fieldset>
+                <legend>Expense information</legend>
+                <p>
+                    <label for="ExpenseName">Expense Name:</label>
+                    <input type="text" placeholder="Automated Production Machine" id="ExpenseName" name="ExpenseName" required>
+                </p>
+                
+                <p>
+                    <label for="ExpenseCategory">Expense Category:</label><br> 
+                    <select id="ExpenseCategory" name="ExpenseCategory" required> 
+                        <option value="Salaries">Salaries</option>  
+                        <option value="Rent">Rent</option> 
+                        <option value="Utilities">Utilities</option> 
+                        <option value="Office Supplies">Office Supplies</option> 
+                        <option value="Transportation">Transportation</option> 
+                        <option value="Maintenance">Maintenance</option> 
+                        <option value="Other Expenses">Other Expenses</option> 
+                    </select> 
+                </p>     
+           </fieldset>
+            
+
+        <h1>Expense Details</h1>
+            
+            <fieldset>
+                <legend>Expense Information</legend>
+                <p>
+                    <label for="ed"> Date:</label>
+                    <input type="date" id="ed" name="ed" required>
+                </p>
+                <p>
+                    <label for="ExpenseValue">Expense Value / Cost:</label>
+                    <input type="number" min="0" step="1000" placeholder="50000000" id="ExpenseValue" name="ExpenseValue" required>
+                </p>  
+            </fieldset>     
+            
+        <button type="submit">Record Expense</button>
+    </form>
+
+</main>
+    
+<footer>
+    <P>Name : Garini SahasraKirana.</P>
+    <p>Nim  : 4.41.25.9.06</p>
+    <p>&copy; 2025 Stary Blue. All rights reserved.</p>
+</footer>
+</body>
+</html>
