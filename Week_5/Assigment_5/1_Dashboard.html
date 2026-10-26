@@ -8,18 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Stary blue</h1>
-    </header>
-
-    <nav>
+        <nav>
         <ul>
-            <li><a href="#chart-of-accounts">Chart of Accounts</a></li>
-            <li><a href="#Balancesheet">Statement of Financial Position</a></li>
-            <li><a href="#general-journal">General Journal</a></li>
-            <li><a href="#cash-movement">Cash Movement Report</a></li>
-            <li><a href="#expense-form">Expense Form</a></li>
+            <li><a href="#performance-table">Performance Table</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+            <li><a href="#summary-cards">Summary Cards</a></li>
         </ul>
     </nav>
+    </header>
+
+    <h1>Stary blue</h1>
 
     <aside class="sidebar">
         <h3>Quick Links</h3>
@@ -68,7 +66,7 @@
                 </tr>
             </tbody>
             <tfoot>
-                <tr>
+                <tr collspan="2" id="Net-profit">
                     <th>Net profit </th>
                     <th>8,000,000</th>
                 </tr>
@@ -85,27 +83,22 @@
                 <tr>
                     <td>Cash</td>
                     <td>10,000,000</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Accounts Receivable</td>
                     <td>5,000,000</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Inventory</td>
                     <td>15,000,000</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Office Equipment</td>
                     <td>20,000,000</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Buildings</td>
                     <td>50,000,000</td>
-                    <td></td>
                 </tr>
             </tbody>
             
@@ -113,13 +106,12 @@
                 <tr>
                     <td>Total</td>
                     <td>100,000,000</td>
-                    <td></td>
                 </tr>
             </tfoot>
         </table>
 
         
-        <section class="summary-cards">
+        <section id="summary-cards">
              <div class="summary-card">
                 <h3>Total Revenue</h3>
                 <p>Rp10,000,000</p>
