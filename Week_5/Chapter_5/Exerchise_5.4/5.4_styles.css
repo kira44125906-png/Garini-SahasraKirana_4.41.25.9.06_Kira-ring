@@ -56,6 +56,7 @@ header nav a:hover {
     padding: 0; 
     margin: 0; 
 } 
+
 .sidebar a { 
     display: block; 
     color: #ecf0f1; 
@@ -122,8 +123,8 @@ header nav a:hover {
     display: block;              /* label above its input */ 
     margin-bottom: 6px; 
     font-weight: 600; 
-}
-
+} 
+ 
 .main-content input[type="text"], 
 .main-content input[type="number"], 
 .main-content input[type="date"], 
