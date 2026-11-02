@@ -5,16 +5,16 @@
 body {
     background-color: #fff;
     font-family: Arial, sans-serif;
-
     min-height: 100vh;
+    margin: 0;
+
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr);
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
-    
+        "header header"
+        "sidebar main"
+        "footer footer";
 }
 
 header {

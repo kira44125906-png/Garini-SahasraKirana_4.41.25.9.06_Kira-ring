@@ -1,0 +1,33 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    background-color: lightblue; /* Default color for wide screens */ 
+    color: #333; 
+    text-align: center; 
+} 
+ 
+h1 { 
+    font-size: 2.5em; 
+    color: navy; 
+} 
+ 
+p { 
+    font-size: 1em; 
+    line-height: 1.5; 
+} 
+ 
+/* Media Query for screens with a maximum width of 600px (e.g., mobile 
+phones) */ 
+@media screen and (max-width: 600px) { 
+    body { 
+        background-color: lightcoral; /* Color for small screens */ 
+        color: white; 
+    } 
+    h1 { 
+        font-size: 1.8em; /* Smaller font size on small screens */ 
+        color: darkred; 
+    } 
+    p { 
+        font-size: 0.9em; 
+    } 
+} 
