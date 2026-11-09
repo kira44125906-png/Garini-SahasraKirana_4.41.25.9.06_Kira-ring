@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Account Management</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #accountList {
+            list-style: decimal;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        #accountList li {
+            margin-bottom: 10px;
+        }
+
+        #accountList li button {
+            background-color: #dc3545;
+            margin-left: 10px;
+            padding: 5px 10px;
+            font-size: 0.8em;
+        }
+
+        #accountList li button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Account Management</h1>
+
+    <label for="newAccountName">New Account Name:</label>
+
+    <input type="text" id="newAccountName"
+        placeholder="New Account Name">
+
+    <button id="addAccountBtn">Add Account</button>
+
+    <h2>Company Chart of Accounts</h2>
+
+    <ul id="accountList">
+        <li>Cash</li>
+        <li>Accounts Receivable</li>
+        <li>Accounts Payable</li>
+        <li>Share Capital</li>
+    </ul>
+
+    <script src="dynamic_accounts.js"></script>
+
+</body>
+</html>

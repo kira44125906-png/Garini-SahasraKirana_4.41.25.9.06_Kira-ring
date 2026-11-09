@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive General Journal Transaction Recording Form">
+    <title>Interactive General Journal Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <main class="page-container">
+
+        <header class="page-header">
+            <div class="brand-mark">AIS</div>
+
+            <div>
+                <p class="eyebrow">ACCOUNTING INFORMATION SYSTEMS</p>
+                <h1>General Journal</h1>
+                <p class="page-subtitle">
+                    Record and manage journal transaction entries.
+                </p>
+            </div>
+        </header>
+
+        <!-- JOURNAL INPUT FORM -->
+        <section class="panel form-panel">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">NEW ENTRY</p>
+                    <h2>Journal Transaction Input</h2>
+                </div>
+                <span class="section-number">01</span>
+            </div>
+
+            <form id="journalForm" novalidate>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="transactionDate">Date</label>
+                        <input type="date"
+                               id="transactionDate"
+                               name="transactionDate"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referenceNumber">Ref. No.</label>
+                        <input type="text"
+                               id="referenceNumber"
+                               name="referenceNumber"
+                               placeholder="e.g. JV-001"
+                               maxlength="30"
+                               required>
+                    </div>
+
+                    <div class="form-group form-group-wide">
+                        <label for="description">Description</label>
+                        <input type="text"
+                               id="description"
+                               name="description"
+                               placeholder="Enter transaction description"
+                               maxlength="120"
+                               required>
+                    </div>
+
+                    <div class="form-group form-group-wide">
+                        <label for="account">Account</label>
+
+                        <select id="account" name="account" required>
+                            <option value="">Select an account</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Bank">Bank</option>
+                            <option value="Accounts Receivable">
+                                Accounts Receivable
+                            </option>
+                            <option value="Service Revenue">
+                                Service Revenue
+                            </option>
+                            <option value="Salaries Expense">
+                                Salaries Expense
+                            </option>
+                            <option value="Accounts Payable">
+                                Accounts Payable
+                            </option>
+                            <option value="Share Capital">
+                                Share Capital
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="debit">Debit (IDR)</label>
+
+                        <div class="input-prefix">
+                            <span>Rp</span>
+                            <input type="number"
+                                   id="debit"
+                                   name="debit"
+                                   min="0"
+                                   step="0.01"
+                                   placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credit">Credit (IDR)</label>
+
+                        <div class="input-prefix">
+                            <span>Rp</span>
+                            <input type="number"
+                                   id="credit"
+                                   name="credit"
+                                   min="0"
+                                   step="0.01"
+                                   placeholder="0">
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="form-note">
+                    <span class="note-dot"></span>
+                    Enter an amount in Debit or Credit, not both.
+                </p>
+
+                <div class="form-actions">
+
+                    <button type="button"
+                            id="addTransactionBtn"
+                            class="button button-primary">
+                        <span class="button-icon">+</span>
+                        Add Transaction Row
+                    </button>
+
+                    <button type="button"
+                            id="saveJournalBtn"
+                            class="button button-secondary">
+                        Save Journal (Dummy)
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- TRANSACTION TABLE -->
+        <section class="panel table-panel">
+
+            <div class="section-heading table-heading">
+                <div>
+                    <p class="section-kicker">TRANSACTION RECORDS</p>
+                    <h2>General Journal Entries</h2>
+                </div>
+
+                <span class="entry-count" id="entryCount">
+                    0 entries
+                </span>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table id="transactionTable">
+
+                    <caption>General Journal Transactions</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Ref. No.</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Account</th>
+                            <th scope="col" class="number-cell">
+                                Debit (IDR)
+                            </th>
+                            <th scope="col" class="number-cell">
+                                Credit (IDR)
+                            </th>
+                            <th scope="col" class="action-cell">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="transactionTableBody">
+                        <!-- JavaScript will add transaction rows here. -->
+                    </tbody>
+
+                </table>
+
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">＋</div>
+
+                    <strong>No journal entries yet</strong>
+
+                    <p>
+                        Complete the form above and select
+                        <b>Add Transaction Row</b> to begin.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span>Interactive General Journal Form</span>
+            <span>Assignment 7.1 · JavaScript &amp; DOM Manipulation</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
